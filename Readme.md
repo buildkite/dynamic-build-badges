@@ -1,20 +1,20 @@
 # Dynamic Build Badges ![](https://img.shields.io/badge/Woot-100%-green.svg?style=flat-square)
 
-Emebed a dynamic [shields.io](http://shields.io) badge into your readmes based on [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data) you have set, such as code coverage, latest version on production, build time, etc.
+Embed dynamic [shields.io](http://shields.io) badges showing custom metrics into readmes, using the [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data). Show code coverage, latest commit running on production, total build duration, or anything you like.
 
 For example, say you had the following code snippet somewhere in your `my-org/my-pipeline` build pipeline:
 
 ```bash
-buildkite meta-data set coverage $(./calculate-code-coverage)
+buildkite meta-data set coverage '95%'
 ```
 
-To embed that value in your readme you’d use the following:
+To show the value from the last passing master build, you’d:
 
 ```html
 <img src="https://my-app.heroku.com/my-org/my-pipeline/coverage?label=Coverage" alt="Coverage">
 ```
 
-which would display:
+which would look like:
 
 <img src="https://cloud.githubusercontent.com/assets/153/14535645/1cd6b448-02b2-11e6-91f4-382a288c5546.png" alt="Screenshot showing the badge" width="110" height="32">
 
