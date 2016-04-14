@@ -26,7 +26,7 @@ module.exports = function buildkiteApi(apiKey) {
         });
         res.resume();
       } else {
-        callback(new Error('Buildkite API returned ' + response.statusCode), null);
+        callback(new Error('Buildkite API returned ' + res.statusCode), null);
       }
     }).on('error', function(e) {
       callback(e, null);

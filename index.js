@@ -4,10 +4,15 @@ var shields = require('./shields');
 var buildkiteApi = require('./buildkite-api')(process.env.BUILDKITE_API_KEY);
 
 var server = http.createServer(function(request, response){
-  badgeUrl(request, function(url) {
-    response.writeHead(302, { 'Location': url });
-    response.end('');
-  })
+  if (request.url == '/') {
+    response.end("Use the following markdown in your Readme:\n" +
+                 '![](//' + request.headers.host + '/my-org/my-pipeline/my-meta-data)');
+  } else {
+    badgeUrl(request, function(url) {
+      response.writeHead(302, { 'Location': url });
+      response.end('');
+    })
+  }
 });
 
 server.listen(process.env.PORT || 8080, function() {
@@ -37,7 +42,7 @@ function fetchBadgeUrl(orgSlug, pipelineSlug, metadataField, options, callback) 
 
   buildkiteApi.fetchBuild(orgSlug, pipelineSlug, branch, state, function(err, build) {
     if (err) {
-      callback(shields.url(label, err, 'red', badgeUrlOptions));
+      callback(shields.url(label, String(err), 'red', badgeUrlOptions));
     } else {
       var metadataValue = build.meta_data[metadataField] || "missing";
       callback(shields.url(label, metadataValue, colorForBuild(build, options), badgeUrlOptions));

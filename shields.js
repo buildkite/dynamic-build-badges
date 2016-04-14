@@ -2,7 +2,7 @@ var querystring = require('querystring');
 
 function paramStr(str) {
   // Escapes the special shields.io characters
-  return str.replace('-','--').replace('_','__');
+  return encodeURIComponent(str.replace(/\-/g,'--').replace(/_/g,'__'));
 }
 
 function url(label, value, color, urlOptions) {
