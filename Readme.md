@@ -24,15 +24,19 @@ Available parameters:
 
 ## Usage
 
-1. **Copy your API token**<br>You’ll need to create a [Buildkite API Token]() with `read_builds` access so it can fetch the latest build and grab its meta-data.
+1. **Create an API token**<br>You’ll need to create a [Buildkite API Token](https://buildkite.com/user/api-access-tokens) with `read_builds` access so it can fetch the latest build and grab its meta-data.
 
 1. **Deploy it to Heroku** <br>[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-4. **Use your badge** :tada:
+4. **Embed your badge** :tada:
 
-## Personalizing
+## Roadmap
 
-...
+* Ability to specify a `range` parameter, and have the color change from red → green depending on the metric
+
+## Contributing
+
+Pull requests welcome!
 
 ## License
 
