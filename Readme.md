@@ -1,12 +1,12 @@
 # Dynamic Build Badges ![](https://img.shields.io/badge/Woot-100%-green.svg?style=flat-square)
 
-A dynamic [shields.io](http://shields.io) badge service for generating your own custom badges based on [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data). For example, say you had a code coverage calculation script that you ran as part of your build:
+Emebed a dynamic [shields.io](http://shields.io) badge into your readmes based on [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data) you have set. For example, you could calculate your code coverage as part of your build, and store it in the `coverage` meta-data key:
 
 ```bash
 buildkite meta-data set coverage $(./calculate-code-coverage)
 ```
 
-Embedding that in your Readme, based on the last passing master build, is as easy as:
+To create a badge to show the value of `coverage` from the last passing build on the master branch, you simply use:
 
 ```markdown
 ![](https://myapp.heroku.com/my-org/my-pipeline/coverage?label=Coverage)
