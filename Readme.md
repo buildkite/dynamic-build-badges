@@ -1,19 +1,15 @@
 # Dynamic Build Badges (WIP)
 
-Dynamic [shields.io](http://shields.io) badges for your Buildkite builds.
-
-An example Node.js app you can easily deploy to Heroku to dynamically generate build badges based off your [Buildkite build meta-data](https://buildkite.com/).
-
-For example, say you had the following build script in any one of your build jobs:
+A dynamic [shields.io](http://shields.io) badge service for generating your own custom badges based on [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data). For example, say you had a code coverage calculation script that you ran as part of your build:
 
 ```bash
 buildkite meta-data set coverage $(./calculate-code-coverage)
 ```
 
-You could then embed badge showing the coverage of the last passing build on the master branch with the following markdown:
+You can now embed a badge in your Readme showing the coverage of the last passing build on the master branch:
 
 ```markdown
-![](https://myapp.heroku.com/my-org/my-pipeline/coverage?label=Coverage&max=100)
+![](https://myapp.heroku.com/my-org/my-pipeline/coverage?label=Coverage)
 ```
 
 (screenshot)
