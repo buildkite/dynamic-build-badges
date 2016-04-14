@@ -6,7 +6,7 @@ Emebed a dynamic [shields.io](http://shields.io) badge into your readmes based o
 buildkite meta-data set coverage $(./calculate-code-coverage)
 ```
 
-To create a badge to show the value of `coverage` from the last passing build on the master branch, you simply use:
+To embed it in your readme:
 
 ```markdown
 ![](https://myapp.heroku.com/my-org/my-pipeline/coverage?label=Coverage)
@@ -17,6 +17,7 @@ To create a badge to show the value of `coverage` from the last passing build on
 Available parameters:
 
 * `branch` - the branch to find the last passing build from. Default is `master`.
+* `state` - the state of the build to search for. Default is `passed`.
 * `color` - any valid SVG named color or hex value (e.g. `red` or `ff0033`). Default is `green`.
 * `style` - one of the [shields.io styles](http://shields.io/#styles) (e.g. `flat-square`)
 * `logo` - [shields.io logo](http://shields.io/#styles) (e.g. `data:image/png;base64,…`)
@@ -24,7 +25,7 @@ Available parameters:
 
 ## Usage
 
-1. **Create an API token**<br>You’ll need to create a [Buildkite API Token](https://buildkite.com/user/api-access-tokens) with `read_builds` access so it can fetch the latest build and grab its meta-data.
+1. **Create an API token**<br>Create a [Buildkite API Token](https://buildkite.com/user/api-access-tokens) with `read_builds` access so it can fetch the latest build and grab its meta-data. Copy this key and paste it into the next step.
 
 1. **Deploy it to Heroku** <br>[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
