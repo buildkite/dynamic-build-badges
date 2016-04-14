@@ -1,6 +1,6 @@
 # Dynamic Build Badges ![](https://img.shields.io/badge/Woot-100%-green.svg?style=flat-square)
 
-Generate build badges dynamically using your [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data) and [shields.io](http://shields.io). Embed a badge to show your code coverage, build timings, latest commit running on production, or anything you like.
+Embed any [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data) value as a readme badge: code coverage, build timings, latest commit running on production, or anything you like.
 
 For example, say you had the following code snippet somewhere in your `my-org/my-pipeline` build pipeline:
 
