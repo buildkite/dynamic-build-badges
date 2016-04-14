@@ -11,7 +11,7 @@ buildkite meta-data set coverage $(./calculate-code-coverage)
 To embed that value in your readme you’d use the following:
 
 ```markdown
-![](https://my-app.heroku.com/my-org/my-pipeline/coverage?label=Coverage)
+![Coverage](https://my-app.heroku.com/my-org/my-pipeline/coverage?label=Coverage)
 ```
 
 <img src="https://cloud.githubusercontent.com/assets/153/14535645/1cd6b448-02b2-11e6-91f4-382a288c5546.png" alt="Screenshot showing the badge" width="110" height="32">
