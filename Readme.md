@@ -29,7 +29,7 @@ Available parameters:
 
 1. [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-4. **Embed your badge** :tada:
+4. **Embeddinate your badges** :tada:
 
 ## Roadmap
 
