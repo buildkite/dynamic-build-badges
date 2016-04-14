@@ -1,0 +1,19 @@
+{
+  "name": "Dynamic Build Badges",
+  "description": "Dynamic shields.io badges for your Buildkite builds",
+  "keywords": [
+    "ci",
+    "badges",
+    "shields",
+    "nodejs",
+    "buildkite"
+  ],
+  "website": "https://buildkite.com/",
+  "repository": "https://github.com/buildkite/dynamic-build-badges",
+  "logo": "https://dl.dropboxusercontent.com/u/376613/buildkite/buildkite-lifx-build-light-logo.svg",
+  "env": {
+    "BUILDKITE_API_KEY": {
+      "description": "A Buildkite API key with read_builds access"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "build-shields",
+  "version": "0.0.1",
+  "description": "Dynamic shield.io badges for your Buildkite builds",
+  "main": "index.js",
+  "scripts": {
+    "web": "node index.js"
+  },
+  "author": "Tim Lucas <tim@buildkite.com>",
+  "license": "MIT"
+}
