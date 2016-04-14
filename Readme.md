@@ -30,7 +30,7 @@ Available parameters:
 
 ## Usage
 
-1. **Create an API token**<br>Create a [Buildkite API Token](https://buildkite.com/user/api-access-tokens) with `read_builds` access so it can fetch the latest build and grab its meta-data. Copy this key and paste it into the next step.
+1. **Create an API token**<br>Create a [Buildkite API Token](https://buildkite.com/user/api-access-tokens) with `read_builds` access so it can fetch the latest build and grab its meta-data. Copy the API key and paste it into the next step, deploying to [Heroku](https://heroku.com/).
 
 1. [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
