@@ -12,7 +12,7 @@ To embed it in your readme:
 ![](https://myapp.heroku.com/my-org/my-pipeline/coverage?label=Coverage)
 ```
 
-<img width="183" alt="Screenshot showing the badge" src="https://cloud.githubusercontent.com/assets/153/14534212/7dcfdf06-02ab-11e6-9dd3-d63c637c609f.png">
+![Screenshot showing the badge](https://cloud.githubusercontent.com/assets/153/14535575/cb59ace2-02b1-11e6-8610-46ab9ef07a39.png)
 
 Available parameters:
 
