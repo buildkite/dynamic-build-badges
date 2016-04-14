@@ -1,6 +1,6 @@
 # Dynamic Build Badges ![](https://img.shields.io/badge/Woot-100%-green.svg?style=flat-square)
 
-A dynamic build badge server that uses the [Buildkite Builds API](https://buildkite.com/docs/api/builds) and [shields.io](http://shields.io/) to turn any of your build pipeline’s [build meta-data values](https://buildkite.com/docs/guides/build-meta-data) into a readme badge. Embed your code coverage, build timings, latest commit running on production, or anything you like!
+A dynamic build badge server that uses the [Buildkite Builds API](https://buildkite.com/docs/api/builds) and [shields.io](http://shields.io/) to turn any of your [build meta-data values](https://buildkite.com/docs/guides/build-meta-data) into a readme badge. Embed your code coverage, build timings, latest commit running on production, or anything you like!
 
 For example, say you had the following code snippet somewhere in your `my-org/my-pipeline` build pipeline:
 
@@ -20,8 +20,8 @@ which would look like:
 
 Available parameters:
 
-* `branch` - the branch to find the last passing build from. Default is `master`.
-* `state` - the state of the build to search for. Default is `passed`.
+* `branch` - the branch to find the latest build from. Default is `master`.
+* `state` - the required state of the latest build on the branch. Default is `passed`.
 * `label` - the label for the badge. Default is meta-data key name.
 * `color` - any valid SVG named color or hex value (e.g. `red` or `ff0033`). Default is `green`.
 * `style` - [shields.io style](http://shields.io/#styles) (e.g. `flat-square`)
