@@ -18,8 +18,9 @@ Available parameters:
 
 * `branch` - the branch to find the last passing build from. Default is `master`.
 * `state` - the state of the build to search for. Default is `passed`.
+* `label` - the label for the badge. Default is meta-data key name.
 * `color` - any valid SVG named color or hex value (e.g. `red` or `ff0033`). Default is `green`.
-* `style` - one of the [shields.io styles](http://shields.io/#styles) (e.g. `flat-square`)
+* `style` - [shields.io style](http://shields.io/#styles) (e.g. `flat-square`)
 * `logo` - [shields.io logo](http://shields.io/#styles) (e.g. `data:image/png;base64,…`)
 * `logoWidth` - [shields.io logoWidth](http://shields.io/#styles) (e.g. `40`)
 
