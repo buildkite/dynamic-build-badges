@@ -30,12 +30,17 @@ function fetchBadgeUrl(orgSlug, pipelineSlug, metadataField, options, callback) 
   var branch = options.branch || 'master';
   var state = options.state || 'passed';
 
+  var badgeUrlOptions = {};
+  if (options.style) badgeUrlOptions.style = options.style;
+  if (options.logo) badgeUrlOptions.logo = options.logo;
+  if (options.logoWidth) badgeUrlOptions.logoWidth = options.logoWidth;
+
   buildkiteApi.fetchBuild(orgSlug, pipelineSlug, branch, state, function(err, build) {
     if (err) {
-      callback(shields.url(label, err, 'red'));
+      callback(shields.url(label, err, 'red', badgeUrlOptions));
     } else {
       var metadataValue = build.meta_data[metadataField] || "missing";
-      callback(shields.url(label, metadataValue, colorForBuild(build, options)));
+      callback(shields.url(label, metadataValue, colorForBuild(build, options), badgeUrlOptions));
     }
   });
 }
