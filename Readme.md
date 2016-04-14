@@ -32,7 +32,7 @@ Available parameters:
 
 ## Roadmap
 
-* Ability to specify a `range` parameter, and have the color change from red → green depending on the metric
+* Ability to specify a `range` parameter, and have the color change from red → green depending on the value
 
 ## Contributing
 
