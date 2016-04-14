@@ -1,4 +1,4 @@
-# Dynamic Build Badges ![](https://img.shields.io/badge/Coverage-95%-green.svg)
+# Dynamic Build Badges ![](https://img.shields.io/badge/Woot-100%-green.svg?style=flat-square)
 
 A dynamic [shields.io](http://shields.io) badge service for generating your own custom badges based on [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data). For example, say you had a code coverage calculation script that you ran as part of your build:
 
