@@ -1,15 +1,17 @@
 # Dynamic Build Badges ![](https://img.shields.io/badge/Woot-100%-green.svg?style=flat-square)
 
-Emebed a dynamic [shields.io](http://shields.io) badge into your readmes based on [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data) you have set. For example, you could calculate your code coverage as part of your build, and store it in the `coverage` meta-data key:
+Emebed a dynamic [shields.io](http://shields.io) badge into your readmes based on [Buildkite build meta-data](https://buildkite.com/docs/guides/build-meta-data) you have set, such as code coverage, latest version on production, build time, etc.
+
+For example, say you had the following code snippet somewhere in your `my-org/my-pipeline` build pipeline:
 
 ```bash
 buildkite meta-data set coverage $(./calculate-code-coverage)
 ```
 
-To embed it in your readme:
+To embed that value in your readme you’d use the following:
 
 ```markdown
-![](https://myapp.heroku.com/my-org/my-pipeline/coverage?label=Coverage)
+![](https://graceful-grasshopper-42.heroku.com/my-org/my-pipeline/coverage?label=Coverage)
 ```
 
 <img src="https://cloud.githubusercontent.com/assets/153/14535645/1cd6b448-02b2-11e6-91f4-382a288c5546.png" alt="Screenshot showing the badge" width="110" height="32">
@@ -35,6 +37,12 @@ Available parameters:
 ## Roadmap
 
 * Ability to specify a `range` parameter, and have the color change from red → green depending on the value
+* Speed up badge display by removing 302 and serving it directly with [shields](https://github.com/badges/shields)
+
+## Development
+
+* `git clone`
+* `env BUILDKITE_API_KEY=xxx npm run web`
 
 ## Contributing
 
