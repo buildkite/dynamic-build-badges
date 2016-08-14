@@ -5,7 +5,7 @@ A dynamic build badge server that uses the [Buildkite Builds API](https://buildk
 For example, say you had the following code snippet somewhere in your `my-org/my-pipeline` build pipeline:
 
 ```bash
-buildkite meta-data set coverage '95%'
+buildkite-agent meta-data set coverage '95%'
 ```
 
 To show the value from the last passing master build, you’d:
