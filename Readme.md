@@ -38,7 +38,7 @@ Available parameters:
 
 ## Docker
 
-You can also run this via the public Docker image:
+You can also run this via Docker using [`buildkite/dynamic-build-badges`](https://hub.docker.com/r/buildkite/dynamic-build-badges/):
 
 ```
 docker run -p 8080:8080 -e BUILDKITE_API_KEY=xyz buildkite/dynamic-build-badges
