@@ -41,7 +41,7 @@ Available parameters:
 You can also run this via the public Docker image:
 
 ```
-docker run -p 8080:8080 -e BUILDKITE_API_KEY=xyz dynamic-build-badges
+docker run -p 8080:8080 -e BUILDKITE_API_KEY=xyz buildkite/dynamic-build-badges
 ```
 
 ## Roadmap
