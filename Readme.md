@@ -36,6 +36,14 @@ Available parameters:
 
 4. **Embeddinate your badges** :tada:
 
+## Docker
+
+You can also run this via the public Docker image:
+
+```
+docker run -p 8080:8080 -e BUILDKITE_API_KEY=xyz dynamic-build-badges
+```
+
 ## Roadmap
 
 * Ability to specify a `range` parameter, and have the color change from red → green depending on the value

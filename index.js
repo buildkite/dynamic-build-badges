@@ -1,7 +1,12 @@
+var buildkiteApiKey = process.env.BUILDKITE_API_KEY;
+if (!buildkiteApiKey) {
+  throw new Error("No BUILDKITE_API_KEY env present");
+}
+
 var http = require('http');
 var url = require('url');
 var shields = require('./shields');
-var buildkiteApi = require('./buildkite-api')(process.env.BUILDKITE_API_KEY);
+var buildkiteApi = require('./buildkite-api')(buildkiteApiKey);
 
 var server = http.createServer(function(request, response){
   if (request.url == '/') {
