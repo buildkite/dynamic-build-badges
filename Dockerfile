@@ -1,4 +1,5 @@
 FROM mhart/alpine-node:4
+MAINTAINER Tim Lucas <tim@buildkite.com>
 
 ADD . /usr/src/app/
 
