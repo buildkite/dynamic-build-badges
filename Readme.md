@@ -1,3 +1,7 @@
+# Deprecated
+
+> Buildkite no longer uses dynamic build badges. This repository is deprecated and is no longer maintained.
+
 # Dynamic Build Badges ![](https://img.shields.io/badge/Woot-100%-green.svg?style=flat-square)
 
 A dynamic build badge server that uses the [Buildkite Builds API](https://buildkite.com/docs/api/builds) and [shields.io](http://shields.io/) to turn any of your [build meta-data values](https://buildkite.com/docs/guides/build-meta-data) into a readme badge. Embed your code coverage, build timings, latest commit running on production, or anything you like!
